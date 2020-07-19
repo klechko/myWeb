@@ -54,6 +54,12 @@ h3 {
 	font-size: 30px;
 }
 
+p {
+	margin-left: 30px;
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+
 ul {
 	align-self: center;
 }
@@ -61,6 +67,11 @@ ul {
 li {
 	padding: 5px;
 	margin: 10px;
+	font-size: 20px;
+}
+
+a {
+	color: #d1d1d1;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
