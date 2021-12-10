@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root {
+  --drkbodybgnd: #222;
+  --drkbodyclr: #d1d1d1;
+  --drknavbgnd: #111;
+  --drknavclr: #818181;
+  --drknavhvr: #f1f1f1;
+  --lghtbodybgnd: #eee;
+  --lghtbodyclr: #222;
+  --lghtnavbgnd: #ddd;
+  --lghtnavclr: #111;
+  --lghtnavhvr: #333;
+}
+
+body {
+	background-color: var(--drkbodybgnd);
+	color: var(--drkbodyclr);
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Navigation */
+nav {
+  height: 100%;
+	width: 140px;
+	z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--drknavbgnd);
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* Navigation links */
+nav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+	font-size: 25px;
+	font-family:  'Courier New', Courier;
+  color: var(--drknavclr);
+  display: block;
+  margin: 10px 0;
+  transition: color 0.2s linear;
+}
+
+nav a:hover {
+  color: var(--drknavhvr);
+}
+
+/* Rest of the page */
+main {
+  margin-left: 160px;
+	padding: 0px 10px;
+	font-size: 20px;
+}
+
+h1 {
+	font-size: 50px;
+}
+
+h2 {
+	font-size: 40px;
+}
+
+h3 {
+	font-size: 30px;
+}
+
+p {
+	margin-left: 30px;
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+
+ul {
+	/* align-self: center; */
+}
+
+li {
+	padding: 5px;
+	margin: 10px;
+	font-size: 20px;
+}
+
+li.inner-li {
+  margin-left: 50px;
+}
+
+a {
+	color: var(--drkbodyclr);
+}
+
+@media (max-width: 992px) {
+  nav {
+    padding-top: 15px;
+    width: 120px;
+  }
+  nav a {
+    font-size: 20px;
+  }
+  main {
+    margin-left: 140px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+
+  }
+}
