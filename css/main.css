@@ -179,7 +179,7 @@ p {
   nav {
     /* display: none; */
     padding-top: 50px;
-    opacity: 0.95;
+    opacity: 0.9;
     transform: translateX(-110%);
     transition: transform 0.3s linear;
   }
