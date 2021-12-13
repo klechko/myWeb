@@ -183,6 +183,9 @@ p {
     transform: translateX(-110%);
     transition: transform 0.3s linear;
   }
+  nav a {
+    font-weight: 600;
+  }
   main {
     margin: 60px 60px;
   }
