@@ -11,6 +11,15 @@
   --lghtnavbgnd: #ddd;
   --lghtnavclr: #111;
   --lghtnavhvr: #333;
+  --white: #fff;
+  --black: #000;
+  --green: #0f0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -22,7 +31,6 @@ body {
 /* Navigation */
 nav {
   height: 100%;
-	width: 140px;
 	z-index: 1;
   position: fixed;
   top: 0;
@@ -32,15 +40,18 @@ nav {
   padding-top: 20px;
 }
 
-/* Navigation links */
+nav ul li {
+  list-style-type: none;
+  padding: 10px;
+  margin: 12.5px;
+}
+
 nav a {
-  padding: 6px 8px 6px 16px;
   text-decoration: none;
 	font-size: 25px;
 	font-family:  'Courier New', Courier;
   color: var(--drknavclr);
-  display: block;
-  margin: 10px 0;
+  /* display: block; */
   transition: color 0.2s linear;
 }
 
@@ -50,13 +61,19 @@ nav a:hover {
 
 /* Rest of the page */
 main {
-  margin-left: 160px;
-	padding: 0px 10px;
+  margin-left: 200px;
+  margin-top: 40px;
+	/* padding: 0px 10px; */
 	font-size: 20px;
+}
+
+a {
+  color: var(--drkbodyclr);
 }
 
 h1 {
 	font-size: 50px;
+  margin-bottom: 30px;
 }
 
 h2 {
@@ -68,39 +85,61 @@ h3 {
 }
 
 p {
-	margin-left: 30px;
-	margin-bottom: 10px;
+	margin-left: 40px;
+	margin-bottom: 30px;
 	font-size: 20px;
 }
 
-ul {
-	/* align-self: center; */
+/* About */
+#about-list {
+  margin-left: 40px;
 }
 
-li {
-	padding: 5px;
-	margin: 10px;
+#about-list li {
+  list-style-type: disc;
+	margin-bottom: 25px;
 	font-size: 20px;
 }
 
-li.inner-li {
+#about-list li.inner-li {
+  list-style-type: circle;
   margin-left: 50px;
 }
 
-a {
-	color: var(--drkbodyclr);
+/* Dev */
+
+#dev-main a {
+  margin-left: 40px;
+  text-decoration: none;
+  transition: color 0.2s linear;
+}
+
+#dev-main a:hover {
+  color: var(--green);
+}
+
+/* Contact */
+
+#contact-list {
+  margin-left: 80px;
+}
+
+#contact-list li {
+  list-style-type: circle;
+	margin-bottom: 25px;
+	font-size: 20px;
 }
 
 @media (max-width: 992px) {
   nav {
-    padding-top: 15px;
-    width: 120px;
+    padding-top: 10px;
   }
   nav a {
-    font-size: 20px;
+    font-size: 18px;
   }
   main {
-    margin-left: 140px;
+    margin-top: 25px;
+    margin-left: 170px;
   }
 }
 
