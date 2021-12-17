@@ -7,7 +7,6 @@ const navTranslate = () => {
   burger.addEventListener('click', () => {
     navigation.classList.toggle('nav-active');
     check = !check;
-    // console.log(check);
     if(check) {
       menuIcon.classList.remove('fa-bars');
       menuIcon.classList.add('fa-times');
@@ -19,4 +18,21 @@ const navTranslate = () => {
   });
 }
 
+const themeChanger = () => {
+  const lightBulb = document.querySelector('.fa-lightbulb');
+
+  const currentTheme = localStorage.getItem('theme');
+
+  if(currentTheme === 'light') document.body.classList.toggle('light-theme');
+
+  lightBulb.addEventListener('click', () => {
+    document.body.classList.toggle('light-theme');
+    let theme = 'dark';
+    if(document.body.classList.contains('light-theme')) theme = 'light';
+    localStorage.setItem('theme', theme);
+  })
+}
+
 document.body.addEventListener('load', navTranslate())
+
+document.body.addEventListener('load', themeChanger())
