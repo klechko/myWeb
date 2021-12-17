@@ -68,7 +68,6 @@ nav a.active {
   transform: translateX(0%);
 }
 
-
 .burger {
   display: none;
   position: fixed;
@@ -144,6 +143,22 @@ p {
   color: var(--green);
 }
 
+/* Photo */
+
+.photo-container {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.photo-container img {
+  max-width: 100%;
+}
+
 /* Contact */
 
 #contact-list {
@@ -156,7 +171,7 @@ p {
 	font-size: 20px;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   nav {
     padding-top: 10px;
   }
@@ -172,6 +187,9 @@ p {
   }
   #dev-main a {
     margin-left: 30px;
+  }
+  .photo-container {
+    gap: 15px;
   }
 }
 
@@ -193,6 +211,14 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .photo-container {
+    justify-content: center;
+    padding: 5px;
+    gap: 10px;
+  }
+  .photo-container img {
+    width: 100%;
   }
 }
 

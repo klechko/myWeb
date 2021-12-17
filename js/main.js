@@ -19,4 +19,4 @@ const navTranslate = () => {
   });
 }
 
-navTranslate();
+document.body.addEventListener('load', navTranslate())
