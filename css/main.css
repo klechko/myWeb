@@ -25,11 +25,11 @@ body {
 }
 
 body.light-theme {
-  --bodybgnd: #eee;
+  --bodybgnd: #e7e7e7;
   --bodyclr: #111;
-  --navbgnd: #ccc;
-  --navclr: #444;
-  --navhvr: #000;
+  --navbgnd: #666;
+  --navclr: #000;
+  --navhvr: #aaa;
   --bulb: #000;
 }
 
