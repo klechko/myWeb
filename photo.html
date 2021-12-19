@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>klechko</title>
   <link rel="stylesheet" type="text/css" href="css/main.css">
-  <!-- <link rel="stylesheet" type="text/css" href="css/fontawesome.all.min.css"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -36,8 +35,10 @@
 	<main id="photo-main">
 		<h1>Photo</h1>
     <h3>My humble photo portfolio</h3>
-		<!-- <p>Photo portfolio currently under construction...</p> -->
-    <div class="photo-container"></div>
+    <div class="loader">
+      <i class="fas fa-spinner fa-pulse"></i>
+    </div>
+    <div class="photo-container hide"></div>
 	</main>
   <script src="js/main.js"></script>
   <script src="js/photo.js"></script>
