@@ -231,7 +231,9 @@ a.page-nav {
 }
 
 .photo-container img {
+  max-height: 401px;
   max-width: 100%;
+  object-fit: cover;
 }
 
 .light-theme .photo-container img {
@@ -307,6 +309,7 @@ a.page-nav {
   }
   .photo-container img {
     width: 100%;
+    max-height: 100%;
   }
 }
 
